@@ -18,6 +18,8 @@ public class TDMManager extends Thread{
         X = L/R;
         this.m = m;
         this.rForStation = rForStation;
+        stations = new Station[m];
+        threadName = "manager";
     }
 
     public void run() {

@@ -23,5 +23,6 @@ public class Main {
         }
 
         TDMManager manager = new TDMManager(l, r, p, m, rForStation);
+        manager.start();
     }
 }

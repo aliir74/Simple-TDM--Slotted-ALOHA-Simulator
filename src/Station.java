@@ -37,11 +37,12 @@ public class Station extends Thread {
             }
             sendTime = false;
             if(frame < 1) {
-                System.err.println("Station " + stationNumber + " has no packet to send!");
+                System.err.println("Station " + stationNumber + " has no packet to send! " + frame);
+                frame += rForStation*X*(m-1);
                 continue;
             }
             frame -= 1;
-            System.out.println("Station " + stationNumber + " sent 1 packet!");
+            System.out.println("Station " + stationNumber + " sent 1 packet! " + frame);
             frame += rForStation*X*(m-1);
             j++;
         }
